@@ -1,9 +1,9 @@
 <x-app-layout>
     <x-flights-search-form>
-        
+
     </x-flights-search-form>
 
-    <div class="py-4">
+    <div class="py-1">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 text-gray-900 dark:text-gray-100">   
             <!-- Search Results -->
             @if(isset($flights))

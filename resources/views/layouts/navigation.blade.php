@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class="bg-white dark:bg-gray-800 border-b border-gray-100 dark:border-gray-700">
+<nav x-data="{ open: false }" class="">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -6,9 +6,9 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('flights.index') }}">
-                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-200" />
+                        <x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-100" />
                     </a>
-                    <span class="pl-4 pr-8 p-1 font-semibold text-lg inline-flex items-center px-1 pt-1 text-gray-800 dark:text-gray-200">
+                    <span class="pl-3 pb-1 font-semibold text-2xl inline-flex items-center text-gray-800 dark:text-gray-100">
                         Flights
                     </span>
                 </div>
