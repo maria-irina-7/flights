@@ -49,7 +49,7 @@
                     id="destination"
                     name="destination"
                     type="text"
-                    class="w-full form-control py-4 px-5 rounded-r-xl"
+                    class="w-full form-control py-4 px-5"
                     placeholder="Destination"
                     autocomplete="off"
                     x-model="searchTerm"
@@ -80,7 +80,33 @@
                     <div x-show="results.length === 0 && searchTerm.length > 1" class="px-4 py-2 text-gray-400">No results</div>
                 </div>
             </div>
-            <div class="col-md-4 h-full">
+
+            <!-- Departure Time -->
+            <div x-data="{ isOpen: false, results: [], searchTerm: '' }" class="relative w-full" @click.away="isOpen = false">
+                <x-airport-search-input 
+                    id="departure-time"
+                    name="departure-time"
+                    type="text"
+                    class="w-full form-control py-4 px-5"
+                    placeholder="Departure Time"
+                    autocomplete="off"
+                    x-model="searchTerm"
+                />
+            </div>
+
+            <!-- Arrival Time -->
+            <div x-data="{ isOpen: false, results: [], searchTerm: '' }" class="relative w-full" @click.away="isOpen = false">
+                <x-airport-search-input 
+                    id="arrival-time"
+                    name="arrival-time"
+                    type="text"
+                    class="w-full form-control py-4 px-5 rounded-r-xl"
+                    placeholder="Arrival Time"
+                    autocomplete="off"
+                    x-model="searchTerm"
+                />
+            </div>
+            <div class="col-md-4 h-full ml-1">
                 <x-primary-button 
                 type="submit" 
                 class="btn btn-primary w-100 h-full py-4">
