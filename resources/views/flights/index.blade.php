@@ -3,7 +3,7 @@
 
     </x-flights-search-form>
 
-    <div class="py-1">
+    <div class="pt-2 pb-6">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-gray-900 dark:text-gray-100">   
             <!-- Search Results -->
             @if(isset($flights))

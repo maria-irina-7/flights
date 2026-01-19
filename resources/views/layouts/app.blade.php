@@ -15,8 +15,8 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="font-sans antialiased">
-        <div class="pt-3 min-h-screen bg-gray-100 dark:bg-slate-900">
+    <body class="font-sans antialiased bg-gray-100 dark:bg-slate-900">
+        <div class="pt-3 min-h-screen flex flex-col h-screen justify-between">
             @include('layouts.navigation')
 
             <!-- Page Heading -->
@@ -29,9 +29,15 @@
             @endisset
 
             <!-- Page Content -->
-            <main>
+            <main class="mb-auto">
                 {{ $slot }}
             </main>
+
+            <footer>
+                <div class="w-full sticky bottom-0 px-40 sm:px-6 lg:px-8 py-8 text-center text-gray-600 dark:text-gray-400 bg-slate-950">
+                    &copy; {{ date('Y') }} Flights. All rights reserved.
+                </div>      
+            </footer>
         </div>
     </body>
 </html>
