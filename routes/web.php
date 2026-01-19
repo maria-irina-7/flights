@@ -21,7 +21,14 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile/transactions', [ProfileController::class, 'history'])->name('profile.transactions');
 });
 
-Route::get('/', [FlightController::class, 'index'])->name('flights.index');
+Route::get('/', function () {
+    return view('home');
+})->name('home');
+
+Route::get('/home', function () {
+    return view('home');
+});
+
 Route::get('/flights', [FlightController::class, 'index'])->name('flights.index');
 Route::post('/search', [FlightController::class, 'search'])->name('flights.search');
 Route::post('/flights/pay', [FlightController::class, 'pay'])->name('flights.pay');

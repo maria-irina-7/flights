@@ -5,12 +5,13 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <a href="{{ route('flights.index') }}">
+                    <a href="{{ route('home') }}" class="shrink-0 flex items-center mr-6">
                         <x-application-logo class="block h-9 w-auto fill-current text-gray-800 dark:text-gray-100" />
+                    
+                        <span class="pl-3 pb-1 font-semibold text-2xl inline-flex items-center text-gray-800 dark:text-gray-100">
+                            Flights
+                        </span>
                     </a>
-                    <span class="pl-3 pb-1 font-semibold text-2xl inline-flex items-center text-gray-800 dark:text-gray-100">
-                        Flights
-                    </span>
                 </div>
                 
 

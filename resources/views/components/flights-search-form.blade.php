@@ -1,5 +1,5 @@
 <!-- Search Form -->
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 font-semibold text-2xl text-gray-800 dark:text-gray-200 leading-tight py-4">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 font-semibold text-2xl text-gray-800 dark:text-gray-200 leading-tight pb-4">
     <form 
         method="POST" 
         action="{{ route('flights.search') }}" 

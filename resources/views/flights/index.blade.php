@@ -1,7 +1,9 @@
 <x-app-layout>
-    <x-flights-search-form>
+    <div class="pt-4">
+        <x-flights-search-form>
 
-    </x-flights-search-form>
+        </x-flights-search-form>
+    </div>
 
     <div class="pt-2 pb-6">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-gray-900 dark:text-gray-100">   
