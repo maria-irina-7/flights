@@ -4,7 +4,7 @@
     </x-flights-search-form>
 
     <div class="py-1">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 text-gray-900 dark:text-gray-100">   
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-gray-900 dark:text-gray-100">   
             <!-- Search Results -->
             @if(isset($flights))
                 <h2 class="mb-4 text-2xl font-semibold dark:text-white">Direct Flights</h2>
